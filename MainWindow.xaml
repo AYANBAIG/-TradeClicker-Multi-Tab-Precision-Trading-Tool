@@ -1,0 +1,34 @@
+﻿<Window x:Class="TradeClicker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Trade Clicker" Height="600" Width="800" Background="#F0F0F0">
+    <Grid>
+        <Canvas Name="CrosshairCanvas" Background="Transparent" Margin="46,129,2,46" />
+
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Right" Margin="0,20,20,0" VerticalAlignment="Top" Width="239">
+            <Button Name="SingleTargetModeButton" Content="START: SINGLE TARGET MODE" Width="220" Height="32" Margin="5" Background="#4285F4" Foreground="White" FontSize="16" RenderTransformOrigin="0.5,0.5" >
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="-1.611"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="0.703"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+            <Button Name="MultiTargetModeButton" Content="START: MULTI TARGET MODE" Width="220" Height="35" Margin="5" Background="#DB4437" Foreground="White" FontSize="16" />
+            <Button Name="OpenSettingsButton" Content="AUTO OPEN SETTINGS" Width="220" Height="50" Margin="5" Background="#F4B400" Foreground="White" FontSize="16" />
+            <Button Name="RemoveAdsButton" Content="REMOVE ADS" Width="220" Height="50" Margin="5" Background="#0F9D58" Foreground="White" FontSize="16" />
+
+            <Slider Name="SizeSlider" Minimum="5" Maximum="100" Value="20" Width="200" Margin="5" />
+            <Slider Name="OpacitySlider" Minimum="0" Maximum="1" Value="0.5" Width="200" Margin="5" />
+
+            <Button Name="DotCrosshairButton" Content="Dot Crosshair" Width="220" Height="50" Margin="5" Background="#4285F4" Foreground="White" FontSize="16" />
+            <Button Name="CircleCrosshairButton" Content="Circle Crosshair" Width="220" Height="50" Margin="5" Background="#DB4437" Foreground="White" FontSize="16" />
+            <Button Name="ReticleCrosshairButton" Content="Reticle Crosshair" Width="220" Height="50" Margin="5" Background="#F4B400" Foreground="White" FontSize="16" />
+
+            <Button Name="ColorAButton" Content="Select Color A" Width="220" Height="50" Margin="5" Background="#0F9D58" Foreground="White" FontSize="16" />
+            <Button Name="ColorBButton" Content="Select Color B" Width="220" Height="50" Margin="5" Background="#0F9D58" Foreground="White" FontSize="16" />
+        </StackPanel>
+    </Grid>
+</Window>

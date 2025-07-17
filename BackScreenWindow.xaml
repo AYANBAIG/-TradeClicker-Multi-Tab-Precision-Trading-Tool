@@ -1,0 +1,14 @@
+﻿<Window x:Class="TradeClicker.BackScreenWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Trade Clicker - Back Screen" Height="450" Width="800" Visibility="Hidden" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Canvas Name="BackScreenCanvas" Background="Transparent" ClipToBounds="True">
+            <!-- Crosshair for Group A -->
+            <Ellipse Name="CrosshairA" Width="30" Height="30" Opacity="0.4" Fill="Green" Visibility="Hidden" Stroke="Black" StrokeThickness="1"/>
+
+            <!-- Crosshair for Group B -->
+            <Ellipse Name="CrosshairB" Width="30" Height="30" Opacity="0.4" Fill="Red" Visibility="Hidden" Stroke="Black" StrokeThickness="1"/>
+        </Canvas>
+    </Grid>
+</Window>
